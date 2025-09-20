@@ -31,15 +31,15 @@ Contoh alurnya:
 ## 2. Contoh Output di Terminal
 
 ### Server (`server.py`)
-![Output Server](dokumentasi/rpc/server.png)  
+![Output Server](../dokumentasi/rpc/server.png)  
 
 ### Client (`client.py`)
-![Output Client](dokumentasi/rpc/client.png)
+![Output Client](../dokumentasi/rpc/client.png)
 
 
 ## 3. Analisis Wireshark
 
-![Wireshark](dokumentasi/rpc/wireshark.png)
+![Wireshark](../dokumentasi/rpc/wireshark.png)
 
 1. ARP (Address Resolution Protocol)
 Frame 1–2

@@ -22,7 +22,7 @@ Terdapat dua program:
 
 ## 3. Contoh Output di Terminal
 
-![Output Server](dokumentasi/reqresp/server.png)  
+![Output Server](../dokumentasi/reqresp/server.png) 
 ### Server (`server.py`)
 ```bash
 Server listening on 0.0.0.0:2222
@@ -32,7 +32,7 @@ Received from client: Apa kabar?
 Received from client: bye
 ```
 
-![Output Client](dokumentasi/reqresp/client.png)  
+![Output Client](../dokumentasi/reqresp/client.png)  
 ### Client (`client.py`)
 ```bash
 Enter message: Hello Server
@@ -46,7 +46,7 @@ Enter another message: bye
 
 ## 4. Analisis Wireshark
 
-![Wireshark](dokumentasi/reqresp/wireshark.png)
+![Wireshark](../dokumentasi/reqresp/wireshark.png)
 
 1. Ringkasan
 Di dalamnya terlihat ada:

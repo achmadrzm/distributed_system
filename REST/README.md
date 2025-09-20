@@ -16,15 +16,15 @@ Contoh alurnya:
 ## 2. Contoh Output di Terminal
 
 ### Server (`server.py`)
-![Output Server](dokumentasi/rest/server.png)  
+![Output Server](../dokumentasi/rest/server.png)  
 
 ### Client (`client.py`)
-![Output Client](dokumentasi/rest/client.png)
+![Output Client](../dokumentasi/rest/client.png)
 
 
 ## 3. Analisis Wireshark
 
-![Wireshark](dokumentasi/rest/wireshark.png)
+![Wireshark](../dokumentasi/rest/wireshark.png)
 
 1. ARP (Address Resolution Protocol)
 Frame 1–2:

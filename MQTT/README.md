@@ -24,7 +24,7 @@ Keduanya terhubung ke broker MQTT bernama `mqtt-broker`.
 
 ## 3. Contoh Output di Terminal
 
-![Output Publisher](dokumentasi/mqtt/pub.png)
+![Output Publisher](../dokumentasi/mqtt/pub.png)
 ### Publisher (`pub.py`)
 ```bash
 Menghubungkan ke mqtt-broker...
@@ -34,7 +34,7 @@ Published: Suhu: 28°C
 Published: Suhu: 28°C
 ```
 
-![Output Subscriber](dokumentasi/mqtt/sub.png)
+![Output Subscriber](../dokumentasi/mqtt/sub.png)
 ### Subscriber (`sub.py`)
 
 ```bash
@@ -49,7 +49,7 @@ Received message: Suhu: 28°C (Topic: sister/temp)
 
 ## 4. Analisis Wireshark
 
-![Wireshark](dokumentasi/mqtt/wireshark.png)
+![Wireshark](../dokumentasi/mqtt/wireshark.png)
 
 1. Ringkasan
 Di dalamnya terlihat ada:

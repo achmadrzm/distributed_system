@@ -19,15 +19,15 @@ Contoh dalam dokumentasi ini menggunakan tiga pola:
 
 ### REQ–REP
 #### Client (`clientzmq.py`)
-![Output Client](dokumentasi/zmq/client-server.png)
+![Output Client](../dokumentasi/zmq/client-server.png)
 
 ### PUB-SUB
 #### Subscriber (`subzmq.py`)
-![Output Subscriber](dokumentasi/zmq/pub-sub.png)
+![Output Subscriber](../dokumentasi/zmq/pub-sub.png)
 
 ### PUSH-PULL
 #### Subscriber (`pullzmq.py`)
-![Output Pull](dokumentasi/zmq/push-pull.png)
+![Output Pull](../dokumentasi/zmq/push-pull.png)
 
 
 ## 3. Konsep PUSH-PULL

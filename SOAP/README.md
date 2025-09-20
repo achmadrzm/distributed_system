@@ -36,12 +36,12 @@ Contoh alurnya:
 ## 2. Contoh Output di Terminal
 
 ### Server (`server.py`)
-![Output Server](dokumentasi/soap/server.png)  
+![Output Server](../dokumentasi/soap/server.png)  
 
 ### Client (`client.py`)
-![Output Client](dokumentasi/soap/client.png)
+![Output Client](../dokumentasi/soap/client.png)
 
 
 ## 3. Analisis Wireshark
 
-![Wireshark](dokumentasi/soap/wireshark.png)
+![Wireshark](../dokumentasi/soap/wireshark.png)
