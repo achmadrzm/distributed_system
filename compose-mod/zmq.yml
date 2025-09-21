@@ -45,7 +45,7 @@ services:
       context: ../ZMQ-mod
       dockerfile: Dockerfile
     container_name: zmq-push-mod
-    command: ["python", "pushzmq.py"]
+    command: ["python", "pushzmq-mod.py"]
     volumes:
       - ../ZMQ-mod:/app:rw
 

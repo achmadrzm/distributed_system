@@ -47,3 +47,13 @@ Content-Type: application/json
 
 5. TCP Connection Termination
 Frame 11–13: TCP FIN, ACK antara client dan server.
+
+# Modifikasi REST
+
+![Server](../dokumentasi-mod/rest/server.png)
+![Client](../dokumentasi-mod/rest/client.png)
+
+- Menambahkan CRUD sederhana untuk tasks: create, read, update, delete
+- Server menyimpan tasks di memory dengan ID unik (next_id)
+- Client bisa menambahkan, melihat, memperbarui, dan menghapus task melalui HTTP requests
+- Input/output menggunakan JSON, server mengembalikan response yang jelas (task, id, error)

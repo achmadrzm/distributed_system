@@ -52,3 +52,12 @@ Kalau ada banyak worker, pekerjaan akan dibagi rata secara otomatis (round-robin
 -- Worker 2 → dapat 17
 -- Worker 3 → dapat 33
 Masing-masing worker akan memproses workload yang diterimanya.
+
+# Modifikasi ZMQ
+
+![Push-Pull](../dokumentasi-mod/zmq/push-pull.png)
+
+- Menambahkan task types: Compute, IO, Network
+- Menambahkan priority: High, Medium, Low
+- Producer mengirim dictionary task (type, priority, workload)
+- Worker menampilkan task type, priority, workload, dan worker ID

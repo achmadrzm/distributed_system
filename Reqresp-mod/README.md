@@ -73,3 +73,11 @@ c. Data Exchange (Request-Response)
 d. Connection Termination
 - 172.18.0.3 mengirim FIN, ACK → ingin menutup koneksi.
 - 172.18.0.2 membalas dengan FIN, ACK → koneksi ditutup dengan rapi.
+
+# Modifikasi REQRESP
+
+![Server](../dokumentasi-mod/reqresp/server.png)
+![Client](../dokumentasi-mod/reqresp/client.png)
+
+- Menambahkan multi-option voting (Option A, Option B, Option C)
+- Server menyimpan count per option dan mengirim response saat vote diterima

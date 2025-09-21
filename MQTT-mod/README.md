@@ -67,3 +67,13 @@ a. TCP Handshake
 b. MQTT Session Establishment
 - Publisher (172.18.0.5) mengirim MQTT Connect Command ke broker
 - Broker (172.18.0.4) merespons dengan MQTT Connect Ack → sesi MQTT siap digunakan.
+
+# Modifikasi MQTT
+
+![Publisher](../dokumentasi-mod/mqtt/pub.png)
+![Subscriber](../dokumentasi-mod/mqtt/sub.png)
+
+- Menambahkan multi-topic (sister/temp & sister/humidity)
+- Publisher kirim dua jenis data sekaligus (suhu & kelembaban)
+- Subscriber menampilkan timestamp untuk setiap pesan
+- Menambahkan error handling koneksi ke broker
