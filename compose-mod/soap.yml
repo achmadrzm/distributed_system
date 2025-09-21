@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  soap-server-mod:
+    build:
+      context: ../SOAP-mod
+      dockerfile: Dockerfile
+    container_name: soap-server-mod
+    volumes:
+      - ../SOAP-mod:/app:rw
+    restart: unless-stopped
+
+  soap-client-mod:
+    build:
+      context: ../SOAP-mod
+      dockerfile: Dockerfile
+    container_name: soap-client-mod
+    depends_on:
+      - soap-server-mod
+    volumes:
+      - ../SOAP-mod:/app:rw
+    command: ["tail", "-f", "/dev/null"]

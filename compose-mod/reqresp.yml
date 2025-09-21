@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  reqresp-server-mod:
+    build:
+      context: ../Reqresp-mod
+      dockerfile: Dockerfile
+    container_name: reqresp-server-mod
+    volumes:
+      - ../Reqresp-mod:/app:rw
+
+  reqresp-client-mod:
+    build:
+      context: ../Reqresp-mod
+      dockerfile: Dockerfile
+    container_name: reqresp-client-mod
+    depends_on:
+      - reqresp-server-mod
+    volumes:
+      - ../Reqresp-mod:/app:rw
+    command: ["tail", "-f", "/dev/null"]

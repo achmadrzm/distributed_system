@@ -1,0 +1,27 @@
+version: "3.9"
+services:
+  rest-server-mod:
+    build:
+      context: ../REST-mod
+      dockerfile: Dockerfile
+    container_name: rest-server-mod
+    ports:
+      - "8081:5152"
+    volumes:
+      - ../REST-mod:/app:rw
+    restart: unless-stopped
+
+  rest-client-mod:
+    build:
+      context: ../REST-mod
+      dockerfile: Dockerfile
+    container_name: rest-client-mod
+    depends_on:
+      - rest-server-mod
+    tty: true
+    stdin_open: true
+    volumes:
+      - ../REST-mod:/app:rw
+    command: ["tail", "-f", "/dev/null"]
+    # Example manual test (run manually, not auto):
+    # docker compose -f compose-mod/rest.yml exec rest-client-mod curl -s 'http://rest-server-mod:5152/add?a=10&b=5'

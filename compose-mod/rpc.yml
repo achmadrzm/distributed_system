@@ -1,0 +1,20 @@
+services:
+  rpc-server-mod:
+    build:
+      context: ../RPC-mod
+      dockerfile: Dockerfile
+    container_name: rpc-server-mod
+    volumes:
+      - ../RPC-mod:/app:rw
+    restart: unless-stopped
+
+  rpc-client-mod:
+    build:
+      context: ../RPC-mod
+      dockerfile: Dockerfile
+    container_name: rpc-client-mod
+    depends_on:
+      - rpc-server-mod
+    volumes:
+      - ../RPC-mod:/app:rw
+    command: ["tail", "-f", "/dev/null"]
